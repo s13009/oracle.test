@@ -2,10 +2,10 @@
 
 1. 「[Oracleインスタントクライアントのダウンロード](http://www.oracle.com/technetwork/jp/topics/index-099943-ja.html)から以下をダウンロードし、展開。<br />
 「instantclient_12_1」ディレクトリが作成されていることを確認
-	* instantclient-basic-linx.x64-12.1.0.2.0.zip
+	* instantclient-basic-linux.x64-12.1.0.2.0.zip
 	* instantclient-sqlplus-linux.x64-12.1.0.1.0.zip<br /><br />
 1. 「非同期IO(libio)」のインストール<br />
-$ sudo aptitude install libaio1 libaio-dev<br /><br />
+$ sudo aptitude install libaio1<br /><br />
 1. 「リードラインラッパー(rlwrap)」のインストール<br />
 $ sudo aptitude install rlwrap<br /><br />
 1. 「[oracle.2014](https://github.com/KimiyukiYamauchi/oracle.2014.git)」を「git clone」
