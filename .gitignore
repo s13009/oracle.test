@@ -1,2 +1,4 @@
 *.swp
 *.sh
+/script
+setup.log
