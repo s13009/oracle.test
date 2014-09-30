@@ -25,7 +25,7 @@ LD_LIBRAY_PATH=/home/yamauchi/instantclient_12_1<br />
 PATH=/home/yamauchi/instantclient_12_1:$PATH<br />
 NLS_LANG=JAPANESE_JAPAN.AL32UTF8<br />
 rlwrap sqlplus hr/hr@172.16.40.4:1521/db11<br />
-	2. 作成したスクリプトを実行し、接続できること
+	2. 作成したスクリプトを実行し、接続できること<br />
 $ ./sqlplus.sh<br />
 6. 以降は以下の操作
 
