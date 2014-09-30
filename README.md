@@ -3,16 +3,16 @@
 1. 「[Oracleインスタントクライアントのダウンロード](http://www.oracle.com/technetwork/jp/topics/index-099943-ja.html)から以下をダウンロードし、展開。<br />
 「instantclient_12_1」ディレクトリが作成されていることを確認
 	* instantclient-basic-linx.x64-12.1.0.2.0.zip
-	* instantclient-sqlplus-linux.x64-12.1.0.1.0.zip<br />
+	* instantclient-sqlplus-linux.x64-12.1.0.1.0.zip<br /><br />
 1. 「非同期IO(libio)」のインストール<br />
-$ sudo aptitude install libaio1 libaio-dev<br />
+$ sudo aptitude install libaio1 libaio-dev<br /><br />
 1. 「リードラインラッパー(rlwrap)」のインストール<br />
-$ sudo aptitude install rlwrap<br />
+$ sudo aptitude install rlwrap<br /><br />
 1. 「[oracle.2014](https://github.com/KimiyukiYamauchi/oracle.2014.git)」を「git clone」
 <br />$ git clone https://github.com/KimiyukiYamauchi/oracle.2014.git (任意のディレクトリ名)<br /><br />
 2. リモートリポジトリ「origin」を別の名前に変える
 <br />$ git remote rename origin  (任意の別名)<br /><br />
-3. 各自のGithubに演習をアップするためのリポジトリを作成
+3. 各自のGithubに演習をアップするためのリポジトリを作成<br />
 4. 上で作成したリモートリポジトリに「origin」と名前をつける
 <br />$ git remote add origin  (各自のリモートリポジトリのURL)<br /><br />
 5. ローカルリポジトリをリモートのpushする
@@ -27,6 +27,24 @@ NLS_LANG=JAPANESE_JAPAN.AL32UTF8<br />
 rlwrap sqlplus hr/hr@172.16.40.4:1521/db11<br />
 	2. 作成したスクリプトを実行し、接続できること<br />
 $ ./sqlplus.sh<br />
+6. 演習環境の設定
+	1. 演習用ユーザで接続するためのスクリプト作成
+		1. 上で作成したスクリプトをコピー<br />
+$ cp sqlplus.sh s99999.sh<br /><br />
+		2. 「ユーザ名=>学籍番号、パスワード=>password」に変更<br />
+$ ./s99999.sh<br /><br />
+		3. 演習用のテーブルを作成するためのスクリプトを実行<br />
+SQL> @create_tbl_oracle.sql<br /><br />
+		4. テーブルが作成できていることを確認<br />
+それぞれのテーブルに対して、SELECT文を実行し、データがちゃんと入っていることを確認<br />
+SQL> select table_name from user_tables;<br /><br />
+			* ORDERS
+			* ORD_DETAILS
+			* SALGRADES
+			* EMPLOYEES
+			* PRODUCTS
+			* CUSTOMERS
+			* DEPARTMENTS
 6. 以降は以下の操作
 
 	* 演習を作成し、講師提出する場合、
