@@ -21,7 +21,7 @@ $ sudo aptitude install rlwrap<br /><br />
 	1. 接続のためのスクリプトを作成<br />
 $ vi sqplus.sh<br >
 で、ファイルを開き、以下を入力。<br />
-LD_LIBRAY_PATH=/home/yamauchi/instantclient_12_1<br />
+LD_LIBRARY_PATH=/home/yamauchi/instantclient_12_1<br />
 PATH=/home/yamauchi/instantclient_12_1:$PATH<br />
 NLS_LANG=JAPANESE_JAPAN.AL32UTF8<br />
 export LD_LIBRARY_PATH PATH NLS_LANG<br />
