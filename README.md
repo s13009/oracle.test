@@ -88,3 +88,16 @@ SQL> select tname from tab;<br />
 	5. employees表でsalが「20万以上かつ30万以下」のempno、ename、sal列を取り出す<br />
 スクリプト(141007-5.sql)
 
+3. 2014/10/08
+
+	1. employees表でdeptnoが「10または20」であるempno、ename、deptno列を取り出す<br />
+スクリプト(141008-1.sql)
+	2. employees表でdeptnoが「10でも20でもない」empno、ename、deptno列を取り出す<br />
+スクリプト(141008-2.sql)
+	3. employees表でsalが「20万より少ないまたは30万より多い」場合のempno、ename、sal列<br />
+を取り出すスクリプト(141008-3.sql)
+	4. products表でpnameに「A4」を含む場合のprodno、pname、price列を取り出す<br />
+スクリプト(141008-4.sql)
+	5. employees表でcommが「NULL」のempno、ename、sal、comm列を取り出す<br />
+スクリプト(141008-5.sql)
+
