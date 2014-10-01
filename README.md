@@ -75,3 +75,16 @@ SQL> select tname from tab;<br />
 	5. employees表のename列、sal列、sal列に100000を足したものを12倍した列<br />
 を取り出す、この時、それぞれに社員番号、社員名、給与、年収の別名<br />
 をつけるスクリプト(141002-5.sql)
+
+2. 2014/10/07
+
+	1. employees表のjob列を重複を排除して取り出すスクリプト(141007-1.sql)
+	2. employees表でenameが「佐藤」のempno、ename、deptno列を取り出す<br />
+スクリプト(141007-2.sql)
+	3. employees表でhiredateが「2006年10月21日」のempno、ename、hiredate列を<br />
+取り出すスクリプト(141007-3.sql)
+	4. employees表でsalが「30万以上」のempno、ename、sal列を取り出すスクリプト<br />
+(141007-4.sql)
+	5. employees表でsalが「20万以上かつ30万以下」のempno、ename、sal列を取り出す<br />
+スクリプト(141007-5.sql)
+
