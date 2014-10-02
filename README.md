@@ -24,12 +24,12 @@ $ vi sqlplus.sh<br >
 この時、「instantclient_12_1」ディレクトリのパスは各自の環境に<br />
 沿って、記述すること<br />
 ```
-LD_LIBRARY_PATH=/home/yamauchi/instantclient_12_1<br />
-PATH=/home/yamauchi/instantclient_12_1:$PATH<br />
-NLS_LANG=JAPANESE_JAPAN.AL32UTF8<br />
-export LD_LIBRARY_PATH PATH NLS_LANG<br />
-export no_proxy=localhost,172.16.40.4<br />
-rlwrap sqlplus hr/hr@172.16.40.4:1521/db11<br />
+LD_LIBRARY_PATH=/home/yamauchi/instantclient_12_1
+PATH=/home/yamauchi/instantclient_12_1:$PATH
+NLS_LANG=JAPANESE_JAPAN.AL32UTF8
+export LD_LIBRARY_PATH PATH NLS_LANG
+export no_proxy=localhost,172.16.40.4
+rlwrap sqlplus hr/hr@172.16.40.4:1521/db11
 ```
 	2. 作成したスクリプトを実行し、接続できること<br />
 $ ./sqlplus.sh<br /><br />
