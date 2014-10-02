@@ -101,3 +101,16 @@ SQL> select tname from tab;<br />
 	5. employees表でcommが「NULL」のempno、ename、sal、comm列を取り出す<br />
 スクリプト(141008-5.sql)
 
+4. 2014/10/09
+
+	1. employees表でsalが「30万以上」かつdeptnoが「30」であるempno、ename、<br />
+sal、deptno列を取り出すスクリプト(141009-1.sql)
+	2. employees表からempno、ename、sal、deptno列を取り出す。この時、salの多い順<br />
+にソートする。但し、salが同額の場合にはdeptnoの小さい順でソートするスクリプト<br />
+(141009-2.sql)
+	3. employeeshy表でdeptnoが置換変数で受け取った値と等しいempno、ename、sal、deptno列<br />
+を取り出すスクリプト(141009-3.sql)
+	4. products表でpnameに「100%」を含むprodno、pname、price列を取り出すスクリプト<br />
+(141009-4.sql)
+	5. employees表でcommが「NULL」でないempno、ename、sal、comm列を取り出す<br />
+スクリプト(141009.sql)
