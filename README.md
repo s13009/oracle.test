@@ -31,6 +31,7 @@ export LD_LIBRARY_PATH PATH NLS_LANG
 export no_proxy=localhost,172.16.40.4
 rlwrap sqlplus hr/hr@172.16.40.4:1521/db11
 ```
+
 	2. 作成したスクリプトを実行し、接続できること<br />
 $ ./sqlplus.sh<br /><br />
 6. 演習環境の設定
