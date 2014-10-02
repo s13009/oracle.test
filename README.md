@@ -21,6 +21,8 @@ $ sudo aptitude install rlwrap<br /><br />
 	1. 接続のためのスクリプトを作成<br />
 $ vi sqlplus.sh<br >
 で、ファイルを開き、以下を入力。<br />
+この時、「instantclient_12_1」ディレクトリのパスは各自の環境に<br />
+沿って、記述すること<br />
 LD_LIBRARY_PATH=/home/yamauchi/instantclient_12_1<br />
 PATH=/home/yamauchi/instantclient_12_1:$PATH<br />
 NLS_LANG=JAPANESE_JAPAN.AL32UTF8<br />
