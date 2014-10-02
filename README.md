@@ -19,7 +19,7 @@ $ sudo aptitude install rlwrap<br /><br />
 <br />$ git push -u origin master<br /><br />
 6. Oracleサーバへの接続確認
 	1. 接続のためのスクリプトを作成<br />
-$ vi sqplus.sh<br >
+$ vi sqlplus.sh<br >
 で、ファイルを開き、以下を入力。<br />
 LD_LIBRARY_PATH=/home/yamauchi/instantclient_12_1<br />
 PATH=/home/yamauchi/instantclient_12_1:$PATH<br />
