@@ -22,15 +22,25 @@ $ sudo aptitude install rlwrap<br /><br />
 $ vi sqlplus.sh<br >
 で、ファイルを開き、以下を入力。<br />
 この時、「instantclient_12_1」ディレクトリのパスは各自の環境に<br />
-沿って、記述すること<br />
+沿って、記述すること<br /><br />
 LD_LIBRARY_PATH=/home/yamauchi/instantclient_12_1<br />
 PATH=/home/yamauchi/instantclient_12_1:$PATH<br />
 NLS_LANG=JAPANESE_JAPAN.AL32UTF8<br />
 export LD_LIBRARY_PATH PATH NLS_LANG<br />
 export no_proxy=localhost,172.16.40.4<br />
-rlwrap sqlplus hr/hr@172.16.40.4:1521/db11<br />
+echo -n "ユーザ名："<br />
+read user<br />
+stty -echo<br />
+echo -n "パスワード："<br />
+read pass<br />
+stty echo<br />
+rlwrap sqlplus hr/hr@172.16.40.4:1521/db11<br /><br />
 	2. 作成したスクリプトを実行し、接続できること<br />
-$ ./sqlplus.sh<br /><br />
+$ ./sqlplus.sh
+ユーザ名：hr
+パスワード：hr (パスワードの入力はエコーバックしないので注意！)
+=> これで接続できること！
+<br /><br />
 6. 演習環境の設定
 	1. 演習用ユーザで接続するためのスクリプト作成
 		1. 上で作成したスクリプトをコピー<br />
