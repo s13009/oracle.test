@@ -57,15 +57,15 @@ SQL> select tname from tab;<br />
 	* 演習を作成し、講師提出する場合、
 
 		1. 現在、「master」branchにいることを確認。いなければ切り替え。
-<br />$ git branch <br /><br />
+<br />$ git branch <br />
 <br />$ git checkout master <br /><br />
 		1. 演習の作業を行うbranchを作成し、それにcheckout
 <br />$ git checkout -b (演習の作業のリポジトリ名) <br /><br />
 		1. 演習を行い、成果物をadd, commitで、リポジトリに登録 
-<br />$ git add -A<br /><br />
+<br />$ git add -A<br />
 <br />$ git commit m "コメント"<br /><br />
 		1. 演習の成果物を「master」branchにmerge
-<br />$ git checkout master <br /><br />
+<br />$ git checkout master <br />
 <br />$ git merge (演習の作業のリポジトリ名) <br /><br />
 		1. ローカルの「master」をGithubに上げる
 <br />$ git pushh <br /><br />
