@@ -65,8 +65,7 @@ SQL> select tname from tab;
 
 	* 演習を作成し、講師提出する場合、
 
-		1. 現在、「master」branchにいることを確認。いなければ切り替え。
-<br />$ git branch 
+		1.「master」branchに切り替え。
 <br />$ git checkout master <br /><br />
 		1. 演習の作業を行うbranchを作成し、それにcheckout
 <br />$ git checkout -b (演習リポジトリ名) <br /><br />
