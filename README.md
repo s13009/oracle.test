@@ -53,13 +53,13 @@ SQL> @create_tbl_oracle.sql<br /><br />
 SQL> select table_name from user_tables;<br />
 SQL> select tname from tab;
 
-			- ORDERS
-			- ORD_DETAILS
-			- SALGRADES
-			- EMPLOYEES
-			- PRODUCTS
-			- CUSTOMERS
-			- DEPARTMENTS
+		- ORDERS
+		- ORD_DETAILS
+		- SALGRADES
+		- EMPLOYEES
+		- PRODUCTS
+		- CUSTOMERS
+		- DEPARTMENTS
 
 6. 以降は以下の操作
 
