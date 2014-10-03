@@ -75,7 +75,7 @@ SQL> select tname from tab;<br />
 	* ひな形などの最新を入手する場合、
 
 		1. 「[oracle.2014](https://github.com/KimiyukiYamauchi/oracle.2014.git)」を「git pull」
-<br />$ git pull -u (自分がつけた別名) master<br /><br />
+<br />$ git pull (自分がつけた別名) master<br /><br />
 
 ## 演習問題
 
