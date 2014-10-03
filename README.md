@@ -51,8 +51,7 @@ SQL> @create_tbl_oracle.sql<br /><br />
 	1. 以下のSELECT文を実行し、テーブルが作成できていることを確認<br />
 また、それぞれのテーブルに対して、SELECT文を実行し、データがちゃんと入っていることを確認<br />
 SQL> select table_name from user_tables;<br />
-SQL> select tname from tab;<br />
-
+SQL> select tname from tab;
 			- ORDERS
 			- ORD_DETAILS
 			- SALGRADES
