@@ -34,7 +34,7 @@ stty -echo<br />
 echo -n "パスワード："<br />
 read pass<br />
 stty echo<br />
-rlwrap sqlplus hr/hr@172.16.40.4:1521/db11<br /><br />
+rlwrap sqlplus $user/$pass@172.16.40.4:1521/db11<br /><br />
 	2. 作成したスクリプトを実行し、接続できること<br />
 $ ./sqlplus.sh<br />
 ユーザ名：hr<br />
