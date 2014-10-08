@@ -135,4 +135,4 @@ sal、deptno列を取り出すスクリプト(141009-1.sql)
 	4. products表でpnameに「100%」を含むprodno、pname、price列を取り出すスクリプト<br />
 (141009-4.sql)
 	5. employees表でcommが「NULL」でないempno、ename、sal、comm列を取り出す<br />
-スクリプト(141009.sql)
+スクリプト(141009-5.sql)
