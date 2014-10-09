@@ -147,3 +147,15 @@ sal、deptno列を取り出すスクリプト(141009-1.sql)
 以降を取得するスクリプト(141014-3.sql)
 	1. 文字列「Oracle Server」の「Server」を「Master」に変換するスクリプト(141014-4.sql)
 	1. employees表からempno, ename, yomi列及びyomiの長さを取得するスクリプト(141014-5.sql)
+
+1. 2014/10/15
+
+	1. 日付の表示書式と表示言語を一旦、英語形式に変更して、employees表からdeptnoが「10」の<br />
+ename, hiredateを表示するスクリプト(141015-1.sql)
+	1. 日付の表示書式と表示言語を日本語形式に戻して、employees表からdeptnoが「10」の<br />
+ename, hiredateを表示するスクリプト(141015-2.sql)
+	1. employees表からdeptnoが「10」のename, hiredate, hiredateの90日後、hiredateの90日前<br />
+を表示するスクリプト(141015-3.sql)
+	1. employees表からhiredateから今日までの経過した月数を小数点以下を切り上げて表示する<br />
+スクリプト(141015-4.sql)
+	1. 今月の最終日を表示するスクリプト(141015-5.sql)
