@@ -136,3 +136,14 @@ sal、deptno列を取り出すスクリプト(141009-1.sql)
 (141009-4.sql)
 	5. employees表でcommが「NULL」でないempno、ename、sal、comm列を取り出す<br />
 スクリプト(141009-5.sql)
+
+1. 2014/10/14
+
+	1. employees表でyomiが「TAKAHASHI」であるempno, ename, yomi列を小文字で格納されている<br />
+ため比較時に取得データを大文字に変換すること(141014-1.sql)
+	1. employees表からyomi列を取り出し、これを先頭のみ大文字に変換する。さらに、<br />
+「@std.it-college.ac.jp」と結合するスクリプト(141014-2.sql)
+	1. 文字列「Oracle Server」の２文字目から３文字取得および同じ文字列の２文字目<br />
+以降を取得するスクリプト(141014-3.sql)
+	1. 文字列「Oracle Server」の「Server」を「Master」に変換するスクリプト(141014-4.sql)
+	1. employees表からempno, ename, yomi列及びyomiの長さを取得するスクリプト(141014-5.sql)
