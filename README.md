@@ -167,4 +167,18 @@ alter session set nls_date_language = 'JAPANESE';<br />
 
 1. 2014/10/16
 
-	1. 日付の表示書式を日本語形式
+	1. 現在日時を「2014-10-11 12:16:10」の書式で文字列に変換して表示するスクリプト<br />
+(141016-1.sql)
+	1. 現在日時を「2014年10月11日(土曜日)」の書式で文字列に変換して表示するスクリプト<br />
+(141016-2.sql)
+	1. 以下のように日付の表示書式と表示言語を変更<br />
+alter session set nls_date_format = 'DD-MON-RR';<br />
+alter session set nls_date_language = 'AMERICAN';<br /> 
+その後、employees表からenameとhiredate（「15TH of October」の書式で変換）<br />
+を取り出すスクリプト(141016-3.sql)<br />
+	1. 以下のように日付の表示書式と表示言語を元に戻す<br />
+alter session set nls_date_format = 'RR-MM-DD';<br />
+alter session set nls_date_language = 'JAPANESE';<br /> 
+その後、文字列「2011年01月01日」を日付値に変換するスクリプト(141016-4.sql)<br />
+	1. 文字列「\5,000,000」を数値の「5000000」に変換し、12で割るスクリプト<br />
+(141016-5.sql)
