@@ -150,12 +150,21 @@ sal、deptno列を取り出すスクリプト(141009-1.sql)
 
 1. 2014/10/15
 
-	1. 日付の表示書式と表示言語を一旦、英語形式に変更して、employees表からdeptnoが「10」の<br />
-ename, hiredateを表示するスクリプト(141015-1.sql)
-	1. 日付の表示書式と表示言語を日本語形式に戻して、employees表からdeptnoが「10」の<br />
-ename, hiredateを表示するスクリプト(141015-2.sql)
+	1. 以下のように日付の表示書式と表示言語を変更<br />
+alter session set nls_date_format = 'DD-MON-RR';<br />
+alter session set nls_date_language = 'AMERICAN';<br /> 
+その後、employees表からdeptnoが「10」のename, hiredate, を取り出すスクリプト(141015-1.sql)<br />
+「[NLS関連初期化パラメータ](http://www.shift-the-oracle.com/config/nlsparameter.html)」
+	1. 以下のように日付の表示書式と表示言語を元に戻す<br />
+alter session set nls_date_format = 'RR-MM-DD';<br />
+alter session set nls_date_language = 'JAPANESE';<br /> 
+その後、employees表からdeptnoが「10」のename, hiredate, を取り出すスクリプト(141015-2.sql)<br />
 	1. employees表からdeptnoが「10」のename, hiredate, hiredateの90日後、hiredateの90日前<br />
 を表示するスクリプト(141015-3.sql)
 	1. employees表からhiredateから今日までの経過した月数を小数点以下を切り上げて表示する<br />
 スクリプト(141015-4.sql)
 	1. 今月の最終日を表示するスクリプト(141015-5.sql)
+
+1. 2014/10/16
+
+	1. 日付の表示書式を日本語形式
