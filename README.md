@@ -161,7 +161,7 @@ alter session set nls_date_language = 'JAPANESE';<br />
 その後、employees表からdeptnoが「10」のename, hiredate, を取り出すスクリプト(141015-2.sql)<br />
 	1. employees表からdeptnoが「10」のename, hiredate, hiredateの90日後、hiredateの90日前<br />
 を表示するスクリプト(141015-3.sql)
-	1. employees表からhiredateから今日までの経過した月数を小数点以下を切り上げて表示する<br />
+	1. employees表からhiredateから今日までの経過した月数を小数点以下を切り捨てて表示する<br />
 スクリプト(141015-4.sql)
 	1. 今月の最終日を表示するスクリプト(141015-5.sql)
 
