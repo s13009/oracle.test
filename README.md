@@ -224,4 +224,4 @@ employees表とdepartments表を結合(deptno)し、empno, ename, deptno, dname�
 	1. employees表からdnameが「営業」（departments表から副問い合わせ）のempno, ename, deptnoを表示するスクリプト(141029-2.sql)
 	1. employees表からsalがempnoの「1003」以上（employees表から副問い合わせ）、かつdnameが「営業」（departments表から副問い合わせ)のempno, ename, sal, deptnoを表示するスクリプト(141029-3.sql)
 	1. employees表とdepartments表を結合(deptno)し、deptno, dname毎のsalの平均が全体の平均（employees表から副問い合わせ）以上であるdeptno, dname, avg(sal)を表示するスクリプト(141029-4.sql)
-	1. employees表を自己結合(empno, mgr)し、enameが「山田」または「伊藤」の上司(mgr)(employees表から副問い合わせ)のempno, ename, job, mgr, deptnoを表示するスクリプト(141029-5.sql)
+	1. employees表を自己結合(empno, mgr)し、enameが「山田」または「伊藤」の上司(mgr)(employees表から副問い合わせ)のempno, enameおよび上司のenameを表示するスクリプト(141029-5.sql)
