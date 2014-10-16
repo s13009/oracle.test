@@ -180,5 +180,5 @@ alter session set nls_date_language = 'AMERICAN';<br />
 alter session set nls_date_format = 'RR-MM-DD';<br />
 alter session set nls_date_language = 'JAPANESE';<br /> 
 その後、文字列「2011年01月01日」を日付値に変換するスクリプト(141016-4.sql)<br />
-	1. 文字列「\5,000,000」を数値の「5000000」に変換し、12で割るスクリプト<br />
+	1. 文字列「￥5,000,000」を数値の「5000000」に変換し、12で割るスクリプト<br />
 (141016-5.sql)
