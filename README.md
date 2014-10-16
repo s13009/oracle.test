@@ -190,3 +190,11 @@ alter session set nls_date_language = 'JAPANESE';<br />
 	1. employees表からename, sal, comm, sal+comm（commがnullの場合はCOALESCE関数を使用して0と見なす）を表示するスクリプト(141021-3.sql)
 	1. employees表からenameとCASE式を使って、deptnoが10の時はsalを1.1倍、20の時は1.2倍、それ以外はsalを表示する。この時、計算結果の別名として、NEW_SALを表示する(141021-4.sql)
 	1. employees表からenameとDECODE関数を使って、deptnoが10の時はsalを1.1倍、20の時は1.2倍、それ以外はsalを表示する。この時、計算結果の別名として、NEW_SALを表示する(141021-5.sql)
+
+1. 2014/10/22
+
+	1. employees表からsalの平均と合計を表示するスクリプト(141022-1.sql)
+	1. employees表からdeptno毎のdeptno、人数、salの平均を表示するスクリプト(141022-2.sql)
+	1. employees表からdeptno、job毎のdeptno、job、人数、salの平均を表示するスクリプト(141022-3.sql)
+	1. employees表からdeptno毎のsalの平均の最大値を表示するスクリプト(141022-4.sql)
+	1. employees表からdeptnoとjobの組み合わせ毎のdeptno、job、人数、salの平均を表示する。但し、人数が２人以上の組み合わせのみ表示する(141022-5.sql)
