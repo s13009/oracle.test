@@ -213,7 +213,7 @@ alter session set nls_date_language = 'JAPANESE';<br />
 	1. USING句を使用し、employees表とdepartments表を結合(deptno)し、empno, ename, deptno, dnameを表示するスクリプト(141028-1.sql)
 	1. (準備)employees表に１件データを追加する<br />
 insert into employees(empno, ename, deptno) values(1015, '山口', null);<br />
-employees表(左側)とdepartments表(右側)を左側外部結合(deptno)し、empno, ename, deptno, dnameを表示するスクリプト(141028-2.sql)
-	1. employees表(左側)とdepartments(右側)を右側外部結合(deptno)し、empno, ename, deptno, dnameを表示するスクリプト(141028-3.sql)
-	1. employees表(左側)とdepartments(右側)を完全外部結合(deptno)し、empno, ename, deptno, dnameを表示するスクリプト(141028-4.sql)
+employees表とdepartments表を結合(deptno)し、empno, ename, deptno, dnameを表示する。この時、employees表のdeptnoがnullのデータも取り出せるスクリプト(141028-2.sql)
+	1. employees表とdepartmentsを結合(deptno)し、empno, ename, deptno, dnameを表示する。この時、employees表でだれも割り当られていないdepartments表の部門も取り出せるスクリプト(141028-3.sql)
+	1. employees表とdepartmentsを結合(deptno)し、empno, ename, deptno, dnameを表示する。この時、employees表のdeptnoがnullのデータ、およびemployees表でだれも割り当られていないdepartments表の部門も取り出せるスクリプト(141028-4.sql)
 	1. employees表とdepartments表をクロス結合し、empno, ename, dnameを表示するスクリプト(141028-5.sql)
