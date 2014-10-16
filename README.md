@@ -185,13 +185,8 @@ alter session set nls_date_language = 'JAPANESE';<br />
 
 1. 2014/10/21
 
-	1. employees表からename, sal, comm, sal+comm（commがnullの場合はNVL関数を使用して0<br />
-と見なす）を表示するスクリプト(141021-1.sql)
-	1. employees表からename, sal, comm, sal+comm（commがnullの場合はNVL2関数を使用して0<br />
-と見なす）を表示するスクリプト(141021-2.sql)
-	1. employees表からename, sal, comm, sal+comm（commがnullの場合はCOALESCE関数を使用して0<br />
-と見なす）を表示するスクリプト(141021-3.sql)
-	1. employees表からenameとCASE式を使って、deptnoが10の時はsalを1.1倍、20の時は1.2倍、<br />
-それ以外はsalを表示する。この時、計算結果の別名として、NEW_SALを表示する(141021-4.sql)
-	1. employees表からenameとDECODE関数を使って、deptnoが10の時はsalを1.1倍、20の時は1.2倍、<br />
-それ以外はsalを表示する。この時、計算結果の別名として、NEW_SALを表示する(141021-5.sql)
+	1. employees表からename, sal, comm, sal+comm（commがnullの場合はNVL関数を使用して0と見なす）を表示するスクリプト(141021-1.sql)
+	1. employees表からename, sal, comm, sal+comm（commがnullの場合はNVL2関数を使用して0と見なす）を表示するスクリプト(141021-2.sql)
+	1. employees表からename, sal, comm, sal+comm（commがnullの場合はCOALESCE関数を使用して0と見なす）を表示するスクリプト(141021-3.sql)
+	1. employees表からenameとCASE式を使って、deptnoが10の時はsalを1.1倍、20の時は1.2倍、それ以外はsalを表示する。この時、計算結果の別名として、NEW_SALを表示する(141021-4.sql)
+	1. employees表からenameとDECODE関数を使って、deptnoが10の時はsalを1.1倍、20の時は1.2倍、それ以外はsalを表示する。この時、計算結果の別名として、NEW_SALを表示する(141021-5.sql)
