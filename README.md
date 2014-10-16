@@ -207,3 +207,13 @@ alter session set nls_date_language = 'JAPANESE';<br />
 	1. employees表とsalgrades表を非等価結合(employees.sal, salgrades.losal, salgrades.hisal)し、empno, ename, sal, gradeを表示するスクリプト(141023-4.sql)
 	1. employees表を自己結合(empno, mgr)して、empno, enameおよび上司のempno, enameを表示するスクリプト(141023-5.sql)
 	1. （応用問題）上記の自己結合で、外部結合を用い、「社長」のデータも取り出せる様に修正したスクリプト(141023-6.sql)
+
+1. 2014/10/28
+
+	1. USING句を使用し、employees表とdepartments表を結合(deptno)し、empno, ename, deptno, dnameを表示するスクリプト(141028-1.sql)
+	1. (準備)employees表に１件データを追加する<br />
+insert into employees(empno, ename, deptno) values(1015, '山口', null);<br />
+employees表(左側)とdepartments表(右側)を左側外部結合(deptno)し、empno, ename, deptno, dnameを表示するスクリプト(141028-2.sql)
+	1. employees表(左側)とdepartments(右側)を右側外部結合(deptno)し、empno, ename, deptno, dnameを表示するスクリプト(141028-3.sql)
+	1. employees表(左側)とdepartments(右側)を完全外部結合(deptno)し、empno, ename, deptno, dnameを表示するスクリプト(141028-4.sql)
+	1. employees表とdepartments表をクロス結合し、empno, ename, dnameを表示するスクリプト(141028-5.sql)
