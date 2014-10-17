@@ -231,5 +231,5 @@ employees表とdepartments表を結合(deptno)し、empno, ename, deptno, dname�
 	1. employees表からdeptnoが「10」または「20」のdeptno, empno, enameを表示するselect文とdeptnoが「20」または「30」のdeptno, empno, enameを表示するselect文の問い合わせ結果を連結し、重複した行を排除して戻すスクリプト(141030-1.sql)
 	1. employees表からdeptnoが「10」または「20」のdeptno, empno, enameを表示するselect文とdeptnoが「20」または「30」のdeptno, empno, enameを表示するselect文の問い合わせ結果を連結し、重複した行も含めて戻すスクリプト(141030-2.sql)
 	1. employees表からdeptnoが「10」または「20」のdeptno, empno, enameを表示するselect文とdeptnoが「20」または「30」のdeptno, empno, enameを表示するselect文の問い合わせ結果を連結し、共通した行だけ戻すスクリプト(141030-3.sql)
-	1. employees表からdeptnoが「10」または「20」のdeptno, empno, enameを表示するselect文とdeptnoが「20」または「30」のdeptno, empno, enameを表示するselect文の問い合わせ結果を連結し、１つめのselect文の結果のうち、２つ目問い合わせ結果にない行を戻すスクリプト(141030-3.sql)
-	1. employees表からdeptnoが「10」または「20」のdeptno, empno, enameを表示するselect文とdeptnoが「20」または「30」のdeptno, empno, enameを表示するselect文の問い合わせ結果を連結し、重複した行を排除して戻す。この時、empnoの昇順で並べて表示するスクリプト(141030-1.sql)
+	1. employees表からdeptnoが「10」または「20」のdeptno, empno, enameを表示するselect文とdeptnoが「20」または「30」のdeptno, empno, enameを表示するselect文の問い合わせ結果を連結し、１つめのselect文の結果のうち、２つ目問い合わせ結果にない行を戻すスクリプト(141030-4.sql)
+	1. employees表からdeptnoが「10」または「20」のdeptno, empno, enameを表示するselect文とdeptnoが「20」または「30」のdeptno, empno, enameを表示するselect文の問い合わせ結果を連結し、重複した行を排除して戻す。この時、empnoの昇順で並べて表示するスクリプト(141030-5.sql)
