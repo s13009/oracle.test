@@ -237,7 +237,7 @@ employees表とdepartments表を結合(deptno)し、empno, ename, deptno, dname�
 1. 2014/11/04
 
 	1. departments表にdeptno「50」、dname「教育」、loc「大手町」で、１行追加し、select文を実行し、正しく追加できていることを確認。その後、追加したデータを削除し、削除できていることを確認(141104-1.sql)
-	1.departments表にdeptno「60」、dname「経理」、locはnullで、１行追加し、select文を実行し、ただしく追加できていること確認。その後、追加したデータを削除し、削除できていることを確認（141104-2.sql)
+	1. departments表にdeptno「60」、dname「経理」、locはnullで、１行追加し、select文を実行し、ただしく追加できていること確認。その後、追加したデータを削除し、削除できていることを確認（141104-2.sql)
 	1. employees表にempno, ename, hiredateを置換変数で入力、その他はnullで１行追加しselect文を実行し、正しく追加できていること確認。その後、追加したデータを削除し、削除できていることを確認(141104-3.sql)
 	1. （事前の操作）departments表からdept_copy表を作成。<br />
 create table dept_copy as select * from departments where 0 = 1;<br />
