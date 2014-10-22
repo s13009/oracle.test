@@ -194,8 +194,8 @@ alter session set nls_date_language = 'JAPANESE';<br />
 1. 2014/10/22
 
 	1. employees表からsalの平均と合計を表示するスクリプト(141022-1.sql)
-	1. employees表からdeptno毎のdeptno、人数、salの平均を表示するスクリプト(141022-2.sql)
-	1. employees表からdeptno、job毎のdeptno、job、人数、salの平均を表示するスクリプト(141022-3.sql)
+	1. employees表からdeptno毎のdeptno、人数、salの平均を表示する。この時、deptnoの昇順で、ソートする(141022-2.sql)
+	1. employees表からdeptno、job毎のdeptno、job、人数、salの平均を表示する。この時、deptnoの昇順で、ソートする。同じdeptnoはjobの昇順でソートする。(141022-3.sql)
 	1. employees表からdeptno毎のsalの平均の最大値を表示するスクリプト(141022-4.sql)
 	1. employees表からdeptnoとjobの組み合わせ毎のdeptno、job、人数、salの平均を表示する。但し、人数が２人以上の組み合わせのみ表示する(141022-5.sql)
 
