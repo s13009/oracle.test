@@ -203,7 +203,7 @@ alter session set nls_date_language = 'JAPANESE';<br />
 
 	1. employees表とdepartments表を結合(deptno)し、empno, ename, dnameを表示するスクリプト(141023-1.sql)
 	1. employees表とdepartments表を結合(deptno)し、deptnoが10または20のempno, ename, dnameを表示するスクリプト(141023-2.sql)
-	1. ord表、customers表およびemployees表の３つの表を結合(orders.custno, customers.custno, orders.salesman_no, employees.empno)し、ordno, date_ordered, cname, enameを表示するスクリプト(141023-3.sql)
+	1. orders表、customers表およびemployees表の３つの表を結合(orders.custno, customers.custno, orders.salesman_no, employees.empno)し、ordno, date_ordered, cname, enameを表示するスクリプト(141023-3.sql)
 	1. employees表とsalgrades表を非等価結合(employees.sal, salgrades.losal, salgrades.hisal)し、empno, ename, sal, gradeを表示するスクリプト(141023-4.sql)
 	1. employees表を自己結合(empno, mgr)して、empno, enameおよび上司のempno, enameを表示するスクリプト(141023-5.sql)
 	1. （応用問題）上記の自己結合で、外部結合を用い、「社長」のデータも取り出せる様に修正したスクリプト(141023-6.sql)
