@@ -250,7 +250,7 @@ create table emp_copy as select * from employees;<br />
 deptnoがnullのデータについて、deptno「10」を設定し、正しく更新出来ていることを確認(141105-1.sql)
 	1. emp_copy表のempnoが「1012」のデータについて、ename「林」、depto「20」を設定（更新前は「吉田」、「30」）し、正しく更新できていることを確認(141105-2.sql)
 	1. emp_copy表のempnoが「1013」および「1014」のデータについて、deptno「null」を設定し、正しく更新できていることを確認(141105-3.sql)
-	1. emp_copy表のempnoがemployees表のenameが「加藤」に等しいデータ(副問い合わせ)について、jobにemployees表のempnoが1010のjob(副問い合わせ)、salにemployees表のempnoが1010のsal(副問い合わせ)をそれぞれ設定し、正しく更新出来ていることを確認(141105-4.sql)
+	1. emp_copy表のempnoがemployees表のenameが「加藤」に等しいデータ(副問い合わせ)について、jobにemployees表のempnoが「1010」のjob(副問い合わせ)、salにemployees表のempnoが「1010」のsal(副問い合わせ)をそれぞれ設定し、正しく更新出来ていることを確認(141105-4.sql)
 
 1. 2014/11/06
 
