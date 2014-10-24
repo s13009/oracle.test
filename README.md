@@ -242,3 +242,34 @@ employees表とdepartments表を結合(deptno)し、empno, ename, deptno, dname�
 	1. （事前の操作）departments表からdept_copy表を作成。<br />
 create table dept_copy as select * from departments where 0 = 1;<br />
 departments表からselect文を使用してデータを取得し、deptno「deptno+1」、dname「dname」、loc「loc」データを追加し、select文を実行し、正しく追加できていることを確認(141104-4.sql)
+
+1. 2014/11/05
+
+	1. （事前の操作）employees表からemp_copy表を作成。<br />
+create table emp_copy as select * from employees;<br />
+deptnoがnullのデータについて、deptno「10」を設定し、正しく更新出来ていることを確認(141105-1.sql)
+	1. emp_copy表のempnoが「1012」のデータについて、ename「林」、depto「20」を設定（更新前は「吉田」、「30」）し、正しく更新できていることを確認(141105-2.sql)
+	1. emp_copy表のempnoが「1013」および「1014」のデータについて、deptno「null」を設定し、正しく更新できていることを確認(141105-3.sql)
+	1. emp_copy表のempnoがemployees表のenameが「加藤」に等しいデータ(副問い合わせ)について、jobにemployees表のempnoが1010のjob(副問い合わせ)、salにemployees表のempnoが1010のsal(副問い合わせ)をそれぞれ設定し、正しく更新出来ていることを確認(141105-4.sql)
+
+1. 2014/11/06
+
+	1. 以下の操作を行うスクリプト(20141106-1.sql)
+		1. dept_copy表にdeptno「50」、dname「教育」、loc「大手町」を追加
+		1. dept_copy表にdeptno「60」、dname「システム」、loc「横浜」を追加
+		1. select文で、上記の追加が正常に行われていることを確認
+		1. 上記の追加の取消処理
+		1. select文で、上記の取消処理が正常に行われていることを確認		
+		1. dept_copy表にdeptno「50」、dname「教育」、loc「大手町」を追加
+		1. dept_copy表にdeptno「60」、dname「システム」、loc「横浜」を追加
+		1. select文で、上記の追加が正常に行われていることを確認
+		1. 上記の追加の確定処理
+		1. 上記の追加の取消処理
+		1. select文で、上記の確定処理後の取消処理が無効であることを確認		
+	1. 以下の操作を行うスクリプト(20141106-2.sql)
+		1. dept_copy表にdeptno「70」、dname「海外」、loc「浦添」を追加
+		1. セーブポイントを設定
+		1. dept_copy表にdeptno「80」、dname「製造」、loc「うるま」を追加
+		1. select文で、上記のdeptno「70」、「80」の両方の追加が正常に行われていることを確認
+		1. セーブポイントまで、取消処理
+		1. select文で、deptno「70」のみ追加されていること(deptno「80」の追加が取り消されていること)
