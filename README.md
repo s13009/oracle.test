@@ -10,7 +10,7 @@ $ sudo aptitude install libaio1<br /><br />
 $ sudo aptitude install rlwrap<br /><br />
 1. 「[oracle.2014](https://github.com/KimiyukiYamauchi/oracle.2014.git)」を「git clone」
 <br />$ git clone https://github.com/KimiyukiYamauchi/oracle.2014.git (任意のディレクトリ名)<br /><br />
-1. クローンしたリポジトリに移動<br />
+1. cloneしたリポジトリに移動<br /><br />
 2. リモートリポジトリ「origin」を別の名前に変える
 <br />$ git remote rename origin  oracle.2014<br /><br />
 3. 各自のGithubに演習をアップするためのリポジトリを作成<br /><br />
