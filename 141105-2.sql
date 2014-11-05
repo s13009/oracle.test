@@ -4,6 +4,10 @@ SET ename = '林',
 WHERE empno = 1012
 /
 
+SELECT *
+FROM emp_copy
+/
+
 rollback
 /
 

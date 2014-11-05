@@ -3,6 +3,10 @@ SET deptno = 10
 WHERE deptno IS null
 /
 
+SELECT *
+FROM emp_copy
+/
+
 rollback
 /
 
