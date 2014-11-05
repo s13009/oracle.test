@@ -5,3 +5,8 @@ WHERE empno IN (1013, 1014)
 
 rollback
 /
+
+
+SELECT *
+FROM emp_copy
+/

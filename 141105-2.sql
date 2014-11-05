@@ -6,3 +6,7 @@ WHERE empno = 1012
 
 rollback
 /
+
+SELECT *
+FROM emp_copy
+/

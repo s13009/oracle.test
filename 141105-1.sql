@@ -5,3 +5,7 @@ WHERE deptno IS null
 
 rollback
 /
+
+SELECT *
+FROM emp_copy
+/
