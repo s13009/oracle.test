@@ -302,10 +302,10 @@ deptnoがnullのデータについて、deptno「10」を設定し、正しく�
 		1. 上記ビューを使用し、select文を実行
 		1. 上記ビューを削除。
 	1. (前提)以下を実行し、emp2表を作成<br />
-create table emp2(empno primary key, ename not null sal not null, deptno)<br />
+create table emp2(empno primary key, ename not null, sal, deptno)<br />
 as select empno, ename, sal, deptno from employees;<br />
 以下の操作を行うスクリプト(141112-2.sql)
-		1. v_empビューの作成、emp2表からempno, ename, sal, deptnoを表示する
+		1. emp2表のempno, ename, sal, deptnoを表示するためのv_empビューの作成、作成したビューを使用し、empno, ename, sal, deptnoを表示する
 		1. 上記ビューを使用し、empnoが「1014」のデータを削除
 		1. 上記ビューを使用し、empnoが「1013」のsalを「300000」に変更 
 		1. 上記ビューを使用し、empno「1030」、ename「山口」、sal「200000」、deptno「null」のデータを追加
