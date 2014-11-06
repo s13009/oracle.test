@@ -1,5 +1,3 @@
 *.swp
-*.sh
-/script
 setup.log
 afiedt.buf
