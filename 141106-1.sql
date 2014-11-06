@@ -40,7 +40,7 @@ FROM dept_copy
 COMMIT
 /
 
-DELETE INSERT INTO dept_copy
+rollback
 /
 
 SELECT deptno, dname, loc
