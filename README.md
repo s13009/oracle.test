@@ -337,6 +337,7 @@ where table_name = 'EMP3';
 			
 1. 2014/11/18
 
+	1. Sample.javaを各自のアカウントに変更して、動作確認
 	1. 以下の処理を行うJavaクラス（クラス名：Select1.class)を作成
 		1. 社員番号を入力させる(標準入力)
 		1. employees表（自己結合）とdepartments表を結合
@@ -347,3 +348,5 @@ where table_name = 'EMP3';
 			1. ename(上司)
 			1. dname(部署)
 			1. loc(場所)
+	1. 上記のJavaクラスのデータベースへの問い合わせを以下通り変更したクラスを作成（クラス名：Select2.class)<br />
+executeQuery => prepareStatement  
