@@ -13,5 +13,5 @@ VALUES(10,20)
 INSERT INTO dept1(deptno, dname)
 VALUES(10,null)
 /
-DELETE FROM dept1
+drop table FROM dept1
 /
