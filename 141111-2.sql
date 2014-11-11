@@ -19,6 +19,6 @@ VALUES(10,null)
 INSERT INTO emp1(empno,ename,deptno)
 VALUES(10,20,null)
 /
-drop table FROM emp1
+drop table emp1
 /
 
