@@ -24,13 +24,10 @@ VALUES
 /
 
 SELECT *
-FROM emp2
+FROM v_emp
 /
 
 rollback
-/
-
-DROP table emp2
 /
 
 DROP table v_emp
