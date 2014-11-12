@@ -5,7 +5,7 @@ create table v_emp_dept
     WHERE deptno = 10
 /
 
-SELET *
+SELECT *
 FROM v_emp_dept
 /
 
