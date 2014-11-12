@@ -29,3 +29,10 @@ FROM emp2
 
 rollback
 /
+
+DROP table emp2
+/
+
+DROP table v_emp
+/
+
