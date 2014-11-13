@@ -326,7 +326,7 @@ as select empno, ename, sal, deptno from employees;<br />
 		1. select文を実行し、dept1シノニムが正しく動作していることを確認
 		1. dept_sシノニムを削除
 	1. (前提)以下を実行し、emp3表を作成<br />
-create table emp3(empno primary key, ename not null sal not null, deptno)<br />
+create table emp3(empno primary key, ename not null, sal, deptno)<br />
 as select empno, ename, sal, deptno from employees;<br />
 以下の操作を行うスクリプト(141113-3.sql)
 		1. emp3表のename列に対して、idx_emp3_ename索引を作成
