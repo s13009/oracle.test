@@ -1,6 +1,5 @@
 *.swp
-*.sh
-/script
+*.class
 setup.log
 afiedt.buf
 /instantclient_12_1
