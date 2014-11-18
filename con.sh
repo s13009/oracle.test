@@ -8,7 +8,7 @@ PATH=/home/yamauchi/instantclient_12_1:$PATH
 NLS_LANG=JAPANESE_JAPAN.AL32UTF8
 export LD_LIBRARY_PATH PATH NLS_LANG
 export no_proxy=localhost,172.16.40.4
-echo -n "ユーザ名："
+echo -n "ユーザー名:"
 read user
 stty -echo
 echo -n "パスワード："

@@ -3,8 +3,9 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.sql.PreparedStatement;
 
-public class Sample {
+public class Select1 {
 	private String _user = "s13009";
 	private String _pass = "password";
 	private String _host = "172.16.40.4";
@@ -12,9 +13,9 @@ public class Sample {
 	
 	public static void main(String[] args){
 
-		Sample sample = new Sample();
+		Select1 select1  = new Select1();
 		try {
-			sample.select();
+			select1.select();
 		}catch(Exception e){
 			e.printStackTrace();
 		}
@@ -24,21 +25,27 @@ public class Sample {
 		Connection conn = null;
 		Statement st = null;
 		ResultSet rs = null;
+		PreparedStatement ps = null;
 
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			conn = DriverManager.getConnection(
 					"jdbc:oracle:thin:@" + _host + ":1521:" + _sid, _user, _pass);
 
-			st = conn.createStatement();
 
-			rs = st.executeQuery("select deptno, dname from DEPARTMENTS");
+			ps = conn.prepareStatement("select e.empno, e.ename, e.job, m.empno, dname, loc from employees e left join employees m on e.mgr = m.empno join departments d on e.deptno = d.deptno");
+
+			rs = ps.executeQuery();
 
 			while(rs.next()){
-				String dept_id = rs.getString(1);
-				String dept_name = rs.getString(2);
+				String empno = rs.getString(1);
+				String ename = rs.getString(2);
+				String job = rs.getString(3);
+				String empno2 = rs.getString(4);
+				String dname = rs.getString(5);
+				String loc = rs.getString(6);
 
-				System.out.printf("部門番号： %s\t部門名： %s\n", dept_id, dept_name);
+				System.out.printf("社員番号： %s\t社員名： %s\n職種: %s\n上司の名前:  %s\n部署名:  %s\n場所:  %s\n", empno, ename, job, empno2, dname, loc);
 			}
 		}catch(ClassNotFoundException e){
 			throw e;
