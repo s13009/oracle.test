@@ -33,7 +33,7 @@ public class Select1 {
 					"jdbc:oracle:thin:@" + _host + ":1521:" + _sid, _user, _pass);
 
 
-			ps = conn.prepareStatement("select e.empno, e.ename, e.job, m.empno, dname, loc from employees e left join employees m on e.mgr = m.empno join departments d on e.deptno = d.deptno");
+			ps = conn.prepareStatement("select e.empno, e.ename, e.job, m.ename, d.dname, d.loc from employees e left join employees m on m.mgr = e.empno left join departments d on e.deptno = d.deptno");
 
 			rs = ps.executeQuery();
 
@@ -41,11 +41,11 @@ public class Select1 {
 				String empno = rs.getString(1);
 				String ename = rs.getString(2);
 				String job = rs.getString(3);
-				String empno2 = rs.getString(4);
+				String ename2 = rs.getString(4);
 				String dname = rs.getString(5);
 				String loc = rs.getString(6);
 
-				System.out.printf("社員番号： %s\t社員名： %s\n職種: %s\n上司の名前:  %s\n部署名:  %s\n場所:  %s\n", empno, ename, job, empno2, dname, loc);
+				System.out.printf("社員番号： %s\t社員名： %s\t職種: %s\t上司の名前:  %s\t部署名:  %s\t場所:  %s\n", empno, ename, job, ename2, dname, loc);
 			}
 		}catch(ClassNotFoundException e){
 			throw e;
