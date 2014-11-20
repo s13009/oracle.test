@@ -99,7 +99,7 @@ public class Select1 {
 					String e_sal = rs.getString(6);
 					String s_grade = rs.getString(7);
 
-					System.out.printf("社員番号:  %s\t社員名:  %s\t職種:  %s\t   部署名:  %s\t場所:  %s\t給与:  %\t給与等級:  %s\n",e_empno, e_ename, e_job, d_dname, d_loc, e_sal, s_grade);
+					System.out.printf("社員番号:  %s\t社員名:  %s\t職種:  %s\t   部署名:  %s\t場所:  %s\t給与:  %s\t給与等級:  %s\n",e_empno, e_ename, e_job, d_dname, d_loc, e_sal, s_grade);
 		}
 		
 		if(Exists && !SubordinateExists) {
